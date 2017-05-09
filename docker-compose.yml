@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  mongodb:
+    build: container
+    restart: always
+    ports:
+    - 27017:27017 
+    volumes:
+    - ./data:/data/db
